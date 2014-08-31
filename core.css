@@ -34,14 +34,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #header { 
     background-color: #0076c0;
-    height: 4.9em;
+    height: 3em;
     padding: 0 1em;
     border-bottom: 1px solid #ccc;
 }
 #header h1 { 
     color: #fff;
+    font-size: 1.75em;
     text-shadow: 0px -1px #000;
-    line-height: 2.5em;
+    line-height: 1.75em;
     float: left;
     width: 6em;
     border-right: 1px solid #e0e0e0;
@@ -49,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #timeline {
     position: absolute;
-    top: 5em;
+    top: 3em;
     left: 0; 
     right: 20em;
     height: 3.5em;
@@ -72,12 +73,12 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     top: .25em;
     line-height: 1em;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 #planChart {
     position: absolute; 
-    top: 8.5em;
+    top: 6.5em;
     left: 0; 
     right: 20em;
     bottom: 0;
@@ -91,18 +92,34 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #fff; 
     border: 1px solid #c0c0c0; 
     border-radius: 10px; 
-    min-height: 12em; 
     margin: .5em; 
+    padding: .5em;
+    box-shadow: 0px 0px 5px #ccc;
 }
 #planChart ol.projects li.swimlane h3 {
     font-size: 1.25em;
     line-height: 2em;
-    padding-left: .5em;
+    margin-left: 4px;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+#planChart ol.projects li.swimlane .row {
+    border: 1px solid #808080;
+    border-radius: 3px;
+    margin-bottom: 1em;
+    font-size: .875em;
+    color: #000;
+    background-color: #aaa; 
+}
+#planChart ol.projects li.swimlane .row h5 {
+    padding: 1em; 
+    font-size: 1em;
+    font-style: italic;
 }
 
 #options {
     position: absolute;
-    top: 5em;
+    top: 3em;
     right: 0;
     width: 18em;
     bottom: 0;
