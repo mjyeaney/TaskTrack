@@ -24,6 +24,29 @@ $(function(){
         setupTimelineWidth();
     });
 
+    // Options panel collapse
+    $('#options .collapseTab').on('click', function(){
+        if ($(this).hasClass('expand')){
+            $(this).removeClass('expand');
+            $('#options').css('right', '0');
+            $('#timeline').css('right', '20em');
+            $('#planChart').css('right', '20em');
+        } else {
+            $('#options').css('right', '-20em');
+            $('#timeline').css('right', '0');
+            $('#planChart').css('right', '0');
+            $(this).addClass('expand');
+        }
+    });
+
+    // Toggle swimlane active state
+    $('ol.projects').on('click', 'li', function(e){
+        $('ol.projects li').removeClass('active');
+        $(this).addClass('active');
+        e.stopPropagation();
+        e.preventDefault();
+    });
+
     // Get data to render timeline
     var view = app.GetViewData();
     var timeLineInfo = app.GetTimelineProperties(view);
@@ -50,6 +73,8 @@ $(function(){
         var lane = $('<li></li>').addClass('swimlane');
         var title = $('<h3></h3>').text(laneInfo.Name);
         title.appendTo(lane);
+
+        if (l === 0) { lane.addClass('active'); }
 
         for (var r = 0; r < laneInfo.Rows.length; r++){
             var row = laneInfo.Rows[r];
