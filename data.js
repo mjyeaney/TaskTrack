@@ -31,7 +31,7 @@ app.GetViewData = function(id){
     view.Lanes.push({
         Name : 'License Portal',
         Description : 'Identity and License management hub for Minitab cloud-based products',
-        ID : '0c7848b2-aec8-4dfb-8629-322798daf45b',
+        ID : '0c7848b2-aec8-4dfb-8629-322798daf45a',
         Tags : [],
         Activities : []
     });
@@ -39,6 +39,13 @@ app.GetViewData = function(id){
         Name : 'Quality Trainer',
         Description : 'Online statistical/quality improvement training.',
         ID : '0c7848b2-aec8-4dfb-8629-322798daf45b',
+        Tags : [],
+        Activities : []
+    });
+    view.Lanes.push({
+        Name : 'Minitab Express',
+        Description : 'Cross-platform version of MSS targeted at the academic markets.',
+        ID : '0c7848b2-aec8-4dfb-8629-322798daf45c',
         Tags : [],
         Activities : []
     });
@@ -67,7 +74,7 @@ app.GetViewData = function(id){
         Name : 'Task 3',
         Tags : [],
         StartDate : '2014-09-01',
-        EndDate : '2014-11-31',
+        EndDate : '2014-11-30',
         Completed : false,
         Description : ''
     });
@@ -85,12 +92,13 @@ app.GetViewData = function(id){
         Name : 'Task 5', 
         Tags : [],
         StartDate : '2014-10-01',
-        EndDate : '2014-11-31',
+        EndDate : '2014-12-31',
         Completed : false,
         Description : ''
     });
 
     // just duplicate activites
-    view.Lanes[1].Activities = view.Lanes[0].Activities.slice(0).reverse();
+    view.Lanes[1].Activities = view.Lanes[0].Activities.slice(0);
+    view.Lanes[2].Activities = view.Lanes[0].Activities.slice(0);
     return view;
 };

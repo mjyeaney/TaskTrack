@@ -17,7 +17,7 @@ $(function(){
         min: 0,
         max: 100,
         value: 50
-    }).on('slidechange', function(e, ui){
+    }).on('slide', function(e, ui){
         var zoom = Math.max(18, ui.value);
         var size = (30.0 * (zoom / 100.0));
         $('ol.timeline li').width(size + 'em');
