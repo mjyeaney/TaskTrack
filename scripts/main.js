@@ -14,11 +14,11 @@ $(function(){
     // Create zoom slider
     $('#slider').slider({
         animate: true,
-        min: 0,
+        min: 10,
         max: 100,
         value: 50
     }).on('slide', function(e, ui){
-        var zoom = Math.max(10, ui.value),
+        var zoom = ui.value,
             size = (30.0 * (zoom / 100.0)),
             padding = (2.0 * (zoom / 100.0));
 
