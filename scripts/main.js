@@ -18,9 +18,12 @@ $(function(){
         max: 100,
         value: 50
     }).on('slide', function(e, ui){
-        var zoom = Math.max(18, ui.value);
-        var size = (30.0 * (zoom / 100.0));
+        var zoom = Math.max(10, ui.value),
+            size = (30.0 * (zoom / 100.0)),
+            padding = (2.0 * (zoom / 100.0));
+
         $('ol.timeline li').width(size + 'em');
+        $('ol.projects li .row h5').css('padding', padding + 'em');
         setupTimelineWidth();
     });
 
