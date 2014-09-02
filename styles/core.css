@@ -171,5 +171,8 @@ h1, h2, h3, h4, h5, h6 {
 #options .collapseTab.expand {
     background-image: url(/images/chevron-left.png);
 }
-#options input, textarea { width: 16.5em; }
+#options input, textarea, select { width: 16.5em; }
+#options input:hover, #options textarea:hover { border: 1px solid #888; }
 #options textarea { height: 16em; }
+
+#options .scrollRegion { overflow-y: scroll; position: absolute; bottom: 0; width: 100%; top: 5em; }

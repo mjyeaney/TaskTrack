@@ -42,6 +42,9 @@ $(function(){
         }
     });
 
+    // Option taglist setup
+    $('#TagList').selectmenu();
+
     // Toggle swimlane active state
     $('ol.projects').on('click', 'li', function(e){
         $('ol.projects li').removeClass('active');
