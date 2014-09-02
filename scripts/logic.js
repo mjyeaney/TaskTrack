@@ -65,12 +65,15 @@ app.GetTimelineProperties = function(currentView){
 // Returns visual properties for the specified lane; drives the render logic.
 // 
 app.GetLaneProperties = function(lane){
-    var laneInfo = {};
+    var laneInfo = {},
+        r = 0,
+        act = null;
+
     laneInfo.Name = lane.Name;
     laneInfo.Rows = [];
 
-    for (var r = 0; r < lane.Activities.length; r++){
-        var act = lane.Activities[r];
+    for (r = 0; r < lane.Activities.length; r++){
+        act = lane.Activities[r];
         laneInfo.Rows.push(act);
     }
 

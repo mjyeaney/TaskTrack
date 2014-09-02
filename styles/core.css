@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 #planChart ol.projects li.swimlane .row {
     border: 1px solid #808080;
     border-radius: 3px;
-    margin-bottom: 1em;
+    margin-bottom: .25em;
     font-size: .875em;
     color: #000;
     background-color: #8c8;
