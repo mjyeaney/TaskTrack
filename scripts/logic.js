@@ -51,7 +51,7 @@ app.GetTimelineProperties = function(currentView){
             Quarter : startDate.format('Q')
         });
 
-        if (startDate < endDate){
+        if ((startDate < endDate) && (startDate.month() != endDate.month())){
             startDate.add(1, 'M');
         } else {
             break;

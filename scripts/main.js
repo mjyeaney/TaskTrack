@@ -80,15 +80,14 @@ $(function(){
         var title = $('<h3></h3>').text(laneInfo.Name);
         title.appendTo(lane);
 
-        if (l === 0) { lane.addClass('active'); }
-
         for (var r = 0; r < laneInfo.Rows.length; r++){
             var row = laneInfo.Rows[r];
             var startMonth = moment(row.StartDate).month();
+
             startMonth -= timeLineInfo[0].Month;
             
-            var startPos = (startMonth / 12.0) * 100.0;
-            var width = (moment(row.EndDate).diff(row.StartDate, 'month') / 12.0) * 100.0;
+            var startPos = ((startMonth / 12.0) * 100.0).toFixed(2);
+            var width = ((moment(row.EndDate).diff(row.StartDate, 'month') / 12.0) * 100.0).toFixed(2);
 
             var activity = $('<div></div')
                 .addClass('row')
