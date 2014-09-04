@@ -168,4 +168,4 @@ h1, h2, h3, h4, h5, h6 {
 #options input:hover, #options textarea:hover { border: 1px solid #888; }
 #options textarea { height: 16em; }
 
-#options .scrollRegion { overflow-y: scroll; position: absolute; bottom: 0; width: 100%; top: 5.5em; }
+#options .scrollRegion { overflow-y: scroll; position: absolute; bottom: 0; top: 5.5em; }
