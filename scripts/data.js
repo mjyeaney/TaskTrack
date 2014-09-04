@@ -97,8 +97,71 @@ app.GetViewData = function(id){
         Description : ''
     });
 
-    // just duplicate activites
-    view.Lanes[1].Activities = view.Lanes[0].Activities.slice(0);
-    view.Lanes[2].Activities = view.Lanes[0].Activities.slice(0);
+    // just duplicate activites for other lanes
+    // May -> July
+    view.Lanes[1].Activities.push({
+        Name : 'Task 1',
+        Tags : [],
+        StartDate : '2014-05-01',
+        EndDate : '2014-07-31',
+        Completed : false,
+        Description : ''
+    });
+    // Sept -> Nov
+    view.Lanes[1].Activities.push({
+        Name : 'Task 3',
+        Tags : [],
+        StartDate : '2014-09-01',
+        EndDate : '2014-12-15',
+        Completed : false,
+        Description : ''
+    });
+    // June -> Sept
+    view.Lanes[1].Activities.push({
+        Name : 'Task 4', 
+        Tags : [],
+        StartDate : '2014-07-01',
+        EndDate : '2015-01-31',
+        Completed : false,
+        Description : ''
+    });
+    // Oct -> Nov
+    view.Lanes[1].Activities.push({
+        Name : 'Task 5', 
+        Tags : [],
+        StartDate : '2014-10-01',
+        EndDate : '2014-12-31',
+        Completed : false,
+        Description : ''
+    });
+
+    // Sept -> Nov
+    view.Lanes[2].Activities.push({
+        Name : 'Task 1',
+        Tags : [],
+        StartDate : '2014-07-01',
+        EndDate : '2014-09-30',
+        Completed : false,
+        Description : ''
+    });
+    // June -> Sept
+    view.Lanes[2].Activities.push({
+        Name : 'Task 2', 
+        Tags : [],
+        StartDate : '2014-06-01',
+        EndDate : '2014-07-30',
+        Completed : false,
+        Description : ''
+    });
+    // Oct -> Nov
+    view.Lanes[2].Activities.push({
+        Name : 'Task 3', 
+        Tags : [],
+        StartDate : '2014-09-01',
+        EndDate : '2014-11-31',
+        Completed : false,
+        Description : ''
+    });
+
     return view;
 };
