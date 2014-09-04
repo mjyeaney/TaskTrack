@@ -23,7 +23,7 @@ $(function(){
             padding = (2.0 * (zoom / 100.0));
 
         $('ol.timeline li').width(size + 'em');
-        $('ol.projects li .row h5').css('padding', padding + 'em');
+        //$('ol.projects li .row h5').css('padding', padding + 'em');
         setupTimelineWidth();
     });
 
