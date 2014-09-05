@@ -1,10 +1,11 @@
 {
-"name": "Synq",
-"version": "0.0.1",
-"engines": {
-    "node": "0.10.5"
-},
-"private": true,
-"scripts": {
-    "start": "node server.js"
+    "name": "Synq",
+    "version": "0.0.1",
+    "engines": {
+        "node": "0.10.5"
+    },
+    "private": true,
+    "scripts": {
+        "start": "node server.js"
+    }
 }
