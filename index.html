@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Synq - Project Planning Tools</title>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/scripts/jquery-ui-1.11.1.custom/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/core.css" type="text/css" />
+</head>
+<body>
+    <div id="header">
+        <h1>Synq</h1>
+
+        <ul id="menuOptions">
+            <li class="new">New...</li>
+        </ul>
+
+        <div id="userStatus">
+            <p>synq-demo<span>SD</span></p>
+        </div>
+    </div>
+
+    <div id="userStatusMenu">
+        <h3><span>SD</span>synq-demo</h3>
+        <p><a href="#" title="Account Settings">Account Settings</a></p>
+        <p><a href="/SignOut" title="Sign Out">Sign Out...</a></p>
+    </div>
+
+    <div id="timeline" class="scrollContainer">
+        <ol class="timeline"></ol>
+    </div>
+
+    <div id="planChart">
+        <ol class="projects"></ol>
+    </div>
+
+    <div id="options">
+        <div class="collapseTab"></div>
+        <div class="region">
+            <h3>Timeline Zoom</h3>
+            <div id="slider"></div>
+        </div>
+        <div class="scrollRegion">
+            <div class="region marginBottom">
+                <h3>Name</h3>
+                <input type="text" id="txtLaneName" value="" autocomplete="false" class="marginBottom" />
+                <h3>Tags</h3>
+                <select id="TagList">
+                    <option>(Choose a tag...)</option>
+                    <option>MSS</option>
+                    <option>Qeytsone</option>
+                    <option>Devize</option>
+                    <option>Quality Trainer</option>
+                    <option>License Portal</option>
+                </select>
+                <h3>Description</h3>
+                <textarea id="txtLaneDesc"></textarea>
+            </div>
+            <p><a href="#" title="Advanced options...">Advanced options...</a></p>
+        </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript" src="/scripts/moment.min.js"></script>
+    <script type="text/javascript" src="/scripts/jquery-ui-1.11.1.custom/jquery-ui.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="/scripts/data.js"></script>
+    <script type="text/javascript" src="/scripts/logic.js"></script>
+    <script type="text/javascript" src="/scripts/main.js"></script>
+</body>
+</html>
