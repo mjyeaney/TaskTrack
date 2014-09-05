@@ -154,6 +154,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 5.5em;
     width: 15em;
     position: relative;
+    text-indent: -.5em;
 }
 #timeline ol li .yq {
     position: absolute;
