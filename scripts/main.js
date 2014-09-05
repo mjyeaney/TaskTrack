@@ -1,9 +1,25 @@
 $(function(){
+    // Top-level click handler
+    $(document).on('click', function(){
+        // Hide the user profile flyout if visible
+        if ($('#userStatus').hasClass('active')) {
+            $('#userStatusMenu').hide();
+            $('#userStatus').removeClass('active');
+        }
+    });
+
     // Matches the width of swimlanes to the current timeline scope
     var setupTimelineWidth = function(){
         var pos = $('ol.timeline li').last()[0].getBoundingClientRect();
         $('ol.projects li').width(pos.left + pos.width);
     };
+
+    // User status / menu behaviors
+    $('#userStatus').on('click', function(e){
+        $(this).addClass('active');
+        $('#userStatusMenu').show();
+        e.stopPropagation();
+    });
 
     // Synchronize scrolling between project area and timeline
     $('#planChart').on('scroll', function(){
