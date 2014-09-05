@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
     background-position: right center;
     background-repeat: no-repeat;
 }
-#heaer #userStatus.active { 
+#header #userStatus.active { 
     background-color: #0096d0;
 }
 #header #userStatus p span {
