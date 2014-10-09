@@ -1,1 +1,1 @@
-node server.js & start http://localhost:8000/index.html
+node server.js & open http://localhost:8000/index.html
