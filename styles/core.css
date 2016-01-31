@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 .marginBottom { margin-bottom: 1em; }
 
 #header { 
-    background-color: #0076c0;
+    background-color: #135;
     height: 4em;
     padding: 0 1em;
 }
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
 }
 #header #userStatus.active { 
-    background-color: #0096d0;
+    background-color: #357;
 }
 #header #userStatus p { line-height: 2.5em; }
 #header #userStatus p span {
