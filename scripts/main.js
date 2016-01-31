@@ -24,7 +24,6 @@ $(function(){
     // Synchronize scrolling between project area and timeline
     $('#planChart').on('scroll', function(){
         $('#timeline').scrollLeft($(this).scrollLeft());
-        $('ol.projects li h3').css('margin-left', Math.max(4, $(this).scrollLeft()));
     });
 
     // Create zoom slider

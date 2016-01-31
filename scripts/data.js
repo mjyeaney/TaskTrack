@@ -29,22 +29,22 @@ app.GetViewData = function(id){
 
     // define some lanes
     view.Lanes.push({
-        Name : 'License Portal',
-        Description : 'Identity and License management hub for Minitab cloud-based products',
+        Name : 'Project 1',
+        Description : 'Sample project #1.',
         ID : '0c7848b2-aec8-4dfb-8629-322798daf45a',
         Tags : [],
         Activities : []
     });
     view.Lanes.push({
-        Name : 'Quality Trainer',
-        Description : 'Online statistical/quality improvement training.',
+        Name : 'Project 2',
+        Description : 'Sample project #2.',
         ID : '0c7848b2-aec8-4dfb-8629-322798daf45b',
         Tags : [],
         Activities : []
     });
     view.Lanes.push({
-        Name : 'Minitab Express',
-        Description : 'Cross-platform version of MSS targeted at the academic markets.',
+        Name : 'Project 3',
+        Description : 'Sample project #3.',
         ID : '0c7848b2-aec8-4dfb-8629-322798daf45c',
         Tags : [],
         Activities : []
@@ -83,7 +83,7 @@ app.GetViewData = function(id){
         Name : 'Task 4', 
         Tags : [],
         StartDate : '2014-07-01',
-        EndDate : '2014-09-30',
+        EndDate : '2015-09-30',
         Completed : false,
         Description : ''
     });
@@ -156,6 +156,32 @@ app.GetViewData = function(id){
     // Oct -> Nov
     view.Lanes[2].Activities.push({
         Name : 'Task 3', 
+        Tags : [],
+        StartDate : '2014-09-01',
+        EndDate : '2014-11-31',
+        Completed : false,
+        Description : ''
+    });
+    view.Lanes[2].Activities.push({
+        Name : 'Task 4',
+        Tags : [],
+        StartDate : '2014-07-01',
+        EndDate : '2014-09-30',
+        Completed : false,
+        Description : ''
+    });
+    // June -> Sept
+    view.Lanes[2].Activities.push({
+        Name : 'Task 5', 
+        Tags : [],
+        StartDate : '2014-06-01',
+        EndDate : '2014-07-30',
+        Completed : false,
+        Description : ''
+    });
+    // Oct -> Nov
+    view.Lanes[2].Activities.push({
+        Name : 'Task 6', 
         Tags : [],
         StartDate : '2014-09-01',
         EndDate : '2014-11-31',
