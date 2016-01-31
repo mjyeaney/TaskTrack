@@ -38,7 +38,6 @@ $(function(){
             padding = (2.0 * (zoom / 100.0));
 
         $('ol.timeline li').width(size + 'em');
-        //$('ol.projects li .row h5').css('padding', padding + 'em');
         setupTimelineWidth();
     });
 
@@ -47,12 +46,8 @@ $(function(){
         if ($(this).hasClass('expand')){
             $(this).removeClass('expand');
             $('#options').css('right', '0');
-            $('#timeline').css('right', '20em');
-            $('#planChart').css('right', '20em');
         } else {
             $('#options').css('right', '-20em');
-            $('#timeline').css('right', '0');
-            $('#planChart').css('right', '0');
             $(this).addClass('expand');
         }
     });

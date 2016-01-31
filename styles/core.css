@@ -9,8 +9,9 @@ body {
     color: #313131;
 }
 
-input, textarea, select {
+input, textarea {
     font-family: "Open sans", Tahoma, Verdana;
+    width: 16.5em;
     font-size: 15px;
     padding: .5em;
     border: 1px solid #c0c0c0;
@@ -18,10 +19,16 @@ input, textarea, select {
 }
 
 select { 
-    box-sizing: content-box; 
+    font-family: "Open sans", Tahoma, Verdana;
+    font-size: 15px;
+    padding: .5em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     -moz-box-sizing: content-box; 
     -webkit-box-sizing: content-box; 
     -ms-box-sizing: content-box; 
+    box-sizing: content-box; 
+    width: 16.5em;
 }
 
 button {
@@ -41,13 +48,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #header { 
     background-color: #0076c0;
-    height: 3em;
+    height: 4em;
     padding: 0 1em;
 }
 #header h1 { 
     color: #fff;
     font-size: 1.75em;
-    line-height: 1.75em;
+    line-height: 2.25em;
     float: left;
     border-right: 1px solid #e0e0e0;
     margin: 0 .25em 0 -.25em;
@@ -61,15 +68,15 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     background-position: left center;
     color: #fff;
-    height: 3em;
-    line-height: 3em;
+    height: 4em;
+    line-height: 4em;
     padding-left: 2.25em;
 }
 
 #header #userStatus {
     position: absolute;
     right: 1em;
-    height: 2.25em;
+    height: 3.25em;
     top: 0;
     color: #fff;
     padding: .5em 1em 0 .5em;
@@ -81,11 +88,12 @@ h1, h2, h3, h4, h5, h6 {
 #header #userStatus.active { 
     background-color: #0096d0;
 }
+#header #userStatus p { line-height: 2.5em; }
 #header #userStatus p span {
     background-color: #800088;
     color: #fff;
     font-size: .875em;
-    padding: .25em;
+    padding: .25em .75em;
     display: inline-block;
     margin-left: .5em;
 }
@@ -94,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
     box-shadow: 0px 0px 10px #ccc;
     position: absolute;
-    top: 2.25em;
+    top: 3.25em;
     right: .5em;
     width: 15em;
     height: 9.5em;
@@ -132,9 +140,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #timeline {
     position: absolute;
-    top: 3em;
+    top: 4em;
     left: 0; 
-    right: 20em;
+    right: 0;
     height: 3.5em;
     border-right: 1px solid #c0c0c0;
     overflow: hidden;
@@ -163,10 +171,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #planChart {
     position: absolute; 
-    top: 6.5em;
+    top: 7.5em;
     left: 0; 
-    right: 20em;
+    right: 0;
     bottom: 0;
+    padding-top: .5em;
     border-top: 1px solid #c0c0c0;
     border-right: 1px solid #c0c0c0;
     background-color: #f0f0f0;
@@ -201,13 +210,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: .25em 1em .25em 1em;
     font-size: 1em;
     white-space: nowrap;
-    font-weight: bold;
-    text-overflow: elipsis;
+    text-overflow: ellipsis;
 }
 
 #options {
     position: absolute;
-    top: 3em;
+    top: 4em;
     right: 0;
     width: 18em;
     bottom: 0;
@@ -215,6 +223,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 1em;
     overflow: visible;
     border-top: 1px solid #fff;
+    border-left: 1px solid #c0c0c0;
     transition: all .25s;
 }
 #options .region { border-bottom: 1px solid #c0c0c0; padding: 1em 0; }
@@ -240,7 +249,6 @@ h1, h2, h3, h4, h5, h6 {
 #options .collapseTab.expand {
     background-image: url(/images/chevron-left.png);
 }
-#options input, textarea, select { width: 16.5em; }
 #options input:hover, #options textarea:hover { border: 1px solid #888; }
 #options textarea { height: 16em; }
 
