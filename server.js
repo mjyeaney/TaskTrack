@@ -26,7 +26,9 @@ router.get('/', function(req, res) {
 
 // REGISTER OUR ROUTES -------------------------------
 // all of our routes will be prefixed with /api
-app.use('/', express.static(__dirname));
+app.use('/', express.static(__dirname, {
+    index: 'default.html'
+}));
 app.use('/api', router);
 
 // START THE SERVER
