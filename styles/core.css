@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
 }
 #header #userStatus.active { 
-    background-color: #357;
+    background-color: #735;
 }
 #header #userStatus p { line-height: 2.5em; }
 #header #userStatus p span {
