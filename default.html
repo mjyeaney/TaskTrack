@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>TaskTrack :: Project Planning Tools</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/scripts/jquery-ui-1.11.1.custom/jquery-ui.css" type="text/css" />
     <link rel="stylesheet" href="/styles/core.css" type="text/css" />
@@ -16,9 +19,9 @@
             <li class="new">New...</li>
         </ul>
 
-        <div id="userStatus">
-            <p>demo-user<span>DU</span></p>
-        </div>
+        <ul id="repoLink">
+            <li><a href="https://github.com/mjyeaney/TaskTrack" title="View on GitHub" target="_blank">View on GitHub</a>
+        </ul>
     </div>
 
     <div id="userStatusMenu">
@@ -57,7 +60,7 @@
                 <h3>Description</h3>
                 <textarea id="txtLaneDesc"></textarea>
             </div>
-            <p><a href="#" title="Advanced options...">Advanced options...</a></p>
+            <p><a href="#" title="Save Task">Save Task</a></p>
         </div>
     </div>
 
