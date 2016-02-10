@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all .25s;
 }
 #options .region { padding: 1em 0; }
-#options h2 { margin-bottom: 1em; }
+#options h2 { padding-top: .5em; margin-bottom: 1em; }
 #options h3 {
     font-size: 1em;
     margin-bottom: 1em;
