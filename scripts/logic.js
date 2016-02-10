@@ -1,3 +1,5 @@
+/* global moment, app */
+
 //
 // Create hosting container for our app scope.
 //

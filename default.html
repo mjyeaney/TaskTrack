@@ -3,7 +3,7 @@
 <head>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>TaskTrack :: Project Planning Tools</title>
     <link rel="shortcut icon" href="/favicon.ico?ver=1.02" />
@@ -16,7 +16,7 @@
         <h1>TaskTrack</h1>
 
         <ul id="menuOptions">
-            <li class="new">New...</li>
+            <li class="new">New Project</li>
         </ul>
 
         <ul id="repoLink">
@@ -41,26 +41,9 @@
     <div id="options">
         <div class="collapseTab"></div>
         <div class="region">
+            <h2>Display Options</h2>
             <h3>Timeline Zoom</h3>
             <div id="slider"></div>
-        </div>
-        <div class="scrollRegion">
-            <div class="region marginBottom">
-                <h3>Name</h3>
-                <input type="text" id="txtLaneName" value="" autocomplete="false" class="marginBottom" />
-                <h3>Tags</h3>
-                <select id="TagList">
-                    <option>(Choose a tag...)</option>
-                    <option>Tag 1</option>
-                    <option>Tag 2</option>
-                    <option>Tag 3</option>
-                    <option>Tag 4</option>
-                    <option>Tag 5</option>
-                </select>
-                <h3>Description</h3>
-                <textarea id="txtLaneDesc"></textarea>
-            </div>
-            <p><a href="#" title="Save Task">Save Task</a></p>
         </div>
     </div>
 

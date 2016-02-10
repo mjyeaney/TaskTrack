@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 4em;
     line-height: 4em;
     padding-left: 2.25em;
+    cursor: pointer;
 }
 
 #header ul#repoLink { list-style-type: none; position: absolute; right: 0; font-size: .775em; }
@@ -176,7 +177,8 @@ h1, h2, h3, h4, h5, h6 {
     border-left: 1px solid #c0c0c0;
     transition: all .25s;
 }
-#options .region { border-bottom: 1px solid #c0c0c0; padding: 1em 0; }
+#options .region { padding: 1em 0; }
+#options h2 { margin-bottom: 1em; }
 #options h3 {
     font-size: 1em;
     margin-bottom: 1em;
@@ -199,7 +201,3 @@ h1, h2, h3, h4, h5, h6 {
 #options .collapseTab.expand {
     background-image: url(/images/chevron-left.png);
 }
-#options input:hover, #options textarea:hover { border: 1px solid #888; }
-#options textarea { height: 16em; }
-
-#options .scrollRegion { overflow-y: scroll; position: absolute; bottom: 0; top: 5.5em; }

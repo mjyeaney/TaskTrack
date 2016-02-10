@@ -1,3 +1,5 @@
+/* global $ */
+
 $(function(){
     // Top-level click handler
     $(document).on('click', function(){
@@ -34,8 +36,7 @@ $(function(){
         value: 50
     }).on('slide', function(e, ui){
         var zoom = ui.value,
-            size = (30.0 * (zoom / 100.0)),
-            padding = (2.0 * (zoom / 100.0));
+            size = (30.0 * (zoom / 100.0));
 
         $('ol.timeline li').width(size + 'em');
         setupTimelineWidth();
@@ -51,9 +52,6 @@ $(function(){
             $(this).addClass('expand');
         }
     });
-
-    // Option taglist setup
-    $('#TagList').selectmenu();
 
     // Toggle swimlane active state
     $('ol.projects').on('click', 'li', function(e){

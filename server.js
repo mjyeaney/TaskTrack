@@ -1,3 +1,5 @@
+/* global __dirname, process */
+
 // BASE SETUP
 // =============================================================================
 
@@ -34,3 +36,4 @@ app.use('/api', router);
 // START THE SERVER
 // =============================================================================
 app.listen(port);
+console.log('Serving on port ' + port + '...');
